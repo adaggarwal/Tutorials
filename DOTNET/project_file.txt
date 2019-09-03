@@ -1,0 +1,14 @@
+MSBuild uses project files to build projects. 
+
+Use the .proj extension when you create a project file that builds projects.
+Use the .targets extension when you create a reusable project file to import into other project files. Files with a .targets extension typically don't build anything themselves, they simply contain instructions that you can import into your .proj files.
+
+Incase this exists - https://docs.microsoft.com/en-us/aspnet/web-forms/overview/deployment/web-deployment-in-the-enterprise/understanding-the-project-file contains pretty good information. 
+
+Relationship between key elements of project file - https://docs.microsoft.com/en-us/aspnet/web-forms/overview/deployment/web-deployment-in-the-enterprise/understanding-the-project-file
+
+--> {Project Element}
+<Project ToolsVersion="4.0" DefaultTargets="FullPublish" 
+         xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+</Project>
+
